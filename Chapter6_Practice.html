@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 5 Practice</title>
+  </head>
+  <body>
+    <h1>Hello Ulrich!</h1>
+    <h2>Chapter 5 Practice</h2>
+    <h3>My First Web Page</h3>
+    <h4>My First Web Page</h4>
+    <h5>My First Web Page</h5>
+    <h6>My First Web Page</h6>
+    <p>My <em>first</em> <strong>web page</strong>.</p>
+    <p>
+      Let's add another <strong><em>paragraph</em></strong
+      >.
+    </p>
+    <p>
+      <a href="http://xkcd.com" title="xkcd: Land of geeky comics!"
+        >Click here</a
+      >
+      to read some excellent comics.
+    </p>
+
+    <script>
+      var lemonChicken = false;
+      var beefWithBlackBean = true;
+      var sweetAndSourPork = true;
+      if (lemonChicken) {
+        console.log("Great! I'm having lemon chicken!");
+      } else if (beefWithBlackBean) {
+        console.log("I'm having the beef.");
+      } else if (sweetAndSourPork) {
+        console.log("OK, I'll have the pork.");
+      } else {
+        console.log("Well, I guess I'll have rice then.");
+      }
+
+      //While loop example
+      var CountingApples = 0;
+      while (CountingApples < 10) {
+        console.log("There are " + CountingApples + " apples.");
+        CountingApples++;
+      }
+
+      //For loop example
+      var timesToSayHello = 3;
+      for (var i = 0; i < timesToSayHello; i++) {
+        console.log("Hello!");
+      }
+
+      //For loop example with arrays
+      var daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+      for (var i = 0; i < daysOfWeek.length; i++) {
+        console.log(daysOfWeek[i]);
+      }
+
+      // Write a loop to print the powers of 3 under 10,000
+      // Rewrite this loop with a while loop.
+      for (var i = 1; i < 10000; i = i * 3) {
+        console.log(i);
+      }
+      while (i < 10000) {
+        console.log(i);
+        i = i * 3;
+      }
+
+      //case statement example
+      for (var day = 1; day < 7; day++) {
+        switch (day) {
+          case 1:
+            console.log("Monday");
+            break;
+          case 2:
+            console.log("Tuesday");
+            break;
+          case 3:
+            console.log("Wednesday");
+            break;
+          case 4:
+            console.log("Thursday");
+            break;
+          case 5:
+            console.log("Friday");
+            break;
+          case 6:
+            console.log("Weekend");
+        }
+      }
+    </script>
+  </body>
+</html>
