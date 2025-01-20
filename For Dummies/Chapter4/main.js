@@ -1,1 +1,1 @@
-//Just explaining divs and Jsfiddle
+//Just explaining divs and JsFiddle
