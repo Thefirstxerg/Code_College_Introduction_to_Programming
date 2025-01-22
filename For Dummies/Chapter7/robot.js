@@ -39,11 +39,15 @@ function changeColor() {
 rightEye.addEventListener("click", moveUpDown);
 leftarm.addEventListener("click", moveRightLeft);
 
+var rightEyeInterval;
+var leftArmInterval;
+
 //On click move the right eye up and down
 function moveUpDown() {
+    clearInterval(rightEyeInterval);
     var top = 0;
     var goingDown = true;
-    var id = setInterval(frame, 20);
+    rightEyeInterval = setInterval(frame, 20);
     function frame() {
         if (goingDown) {
             top++;
@@ -61,9 +65,10 @@ function moveUpDown() {
 };
 //On click move the left arm right and left
 function moveRightLeft() {
+    clearInterval(leftArmInterval);
     var left = 0;
     var goingRight = true;
-    var id = setInterval(frame, 20);
+    leftArmInterval = setInterval(frame, 20);
     function frame() {
         if (goingRight) {
             left++;
@@ -76,6 +81,6 @@ function moveRightLeft() {
                 goingRight = true;
             }
         }
-        leftarm.style.left = left + "px";
+        leftarm.style.left = left + 700 + "px";
     }
 };
