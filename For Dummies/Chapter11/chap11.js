@@ -14,9 +14,7 @@ var peopleString = people.join();
 var lastBobbyIndex = people.lastIndexOf("Bobby");
 //Pop is used to remove the last element of an array
 people.pop();
-people.pop();
 //Push is used to add an element to the end of an array
-people.push("Teddy");
 people.push("Teddy");
 //Reverse is used to reverse the order of an array
 people.reverse();
