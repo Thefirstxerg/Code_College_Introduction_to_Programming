@@ -27,7 +27,7 @@ people.unshift("Teddy");
 var slicedPeople = people.slice(0, 3);
 //Sort is used to sort the elements of an array numerically according to ASCII values
 people.sort();
-//Splice is used to add or remove elements from an array, a combination of pop and push
+//Splice is used to add or remove elements from an array while also returning some of the removed elements
 people.splice(1, 0, "Cathy");
 
 //Simple example
@@ -39,3 +39,8 @@ var familyID = document.getElementById("myFamily");
 console.log(family);
 
 familyID.innerHTML = "<h3> This is my family: " + family + "</h3>";
+
+var veryLongArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var selectNumbers = veryLongArray.slice(2, 7); 
+console.log(selectNumbers);
+console.log(veryLongArray.slice(7,9));
