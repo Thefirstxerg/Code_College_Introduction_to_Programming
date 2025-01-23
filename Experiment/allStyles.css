@@ -1,27 +1,23 @@
 body {
-    background-color: #121212;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #121212; /* Dark theme background */
 }
 
-button#start {
-    background-color: #1f1f1f;
-    color: hsl(0, 0%, 74%);
-    border: 2px solid;
-    border-image: linear-gradient(to right, hsl(0, 0%, 74%), #888888) 1;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 15px; /* Increased border-radius for more roundness */
-    transition: transform 0.3s ease;
+#clickToStart {
+    opacity: 0;
+    animation: fadeIn 8s forwards;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff; /* Light text color for contrast */
 }
 
-button#start:hover {
-    background-color: #333333;
-    transform: scale(1.1);
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }

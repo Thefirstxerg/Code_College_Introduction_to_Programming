@@ -1,6 +1,6 @@
 //Functions
 
-var trainSpeed = 250;
+var trainSpeed = 50;
 var trainPosition = 0;
 var animation;
 
@@ -29,15 +29,17 @@ function speedUp() {
 }
 
 function checkPosition(currentPosition) {
-    if (currentPosition === 260) {
+    if (currentPosition === 400) {
         alert("OOOOO!");
         console.log("Crash!");
         clearInterval(animation);
+        currentPosition = 0;
+        train.style.left = 0 + 'px';
     }
 }
 
 function stopTrain() {
-    if (trainPosition < 260) {
+    if (trainPosition < 400) {
         clearInterval(animation);
     }
 }
