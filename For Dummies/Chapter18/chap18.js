@@ -6,14 +6,13 @@ var lunches = 0;
 document.getElementById("money").innerHTML = money;
 
 //listen for order
-// orderButton = document.getElementById("placeOrder");
-// orderButton.addEventListener("click", buyLunches);
+orderButton = document.getElementById("placeOrder");
+orderButton.addEventListener("click", buyLunches);
 
 document.getElementById("placeOrder").addEventListener("click", buyLunches);
 
-/*
-buys specified number of sandwiches per day at current prices
-/
+
+//buys specified number of sandwiches per day at current prices
 function buyLunches() {
     resetForm();
     var day = 0;
@@ -21,7 +20,7 @@ function buyLunches() {
         day++;
         var priceToday = getSandwichPrice();
         var numberOfSandwiches = document.getElementById("numSandwiches").value;
-        var totalPrice = priceToday numberOfSandwiches;
+        var totalPrice = priceToday * numberOfSandwiches;
 
 
         if (money >= totalPrice) {
@@ -39,9 +38,8 @@ function buyLunches() {
 
 }
 
-/*
-gets the current price of sandwiches
-/
+//gets the current price of sandwiches
+
 function getSandwichPrice() {
     var sandwichPrice = (Math.random() (1 - 0) + 1).toFixed(2);
     return sandwichPrice;
