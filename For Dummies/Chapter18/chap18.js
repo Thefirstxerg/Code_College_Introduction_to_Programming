@@ -51,16 +51,25 @@ function getSandwichPrice() {
 resets the game so that a new order can be placed
 */
 function resetForm() {
-    money = 20;
-    lunches = 0;
-    document.getElementById("receipt").innerHTML = "";
-
+  money = 20;
+  lunches = 0;
+  document.getElementById("receipt").innerHTML = "";
 }
 
+
+
+
+
+
+
+
+
+
+//While loop
 function countUp() {
-    var i = 0;
-    while (i < 10) {
-        i++;
-        console.log(i);
-    }
+  let i = 0;
+  while (i < 11) {
+    i++;
+    console.log(i);
+  }
 }
