@@ -17,6 +17,7 @@ function buyLunches() {
     resetForm();
     var day = 0;
     while (money > 0) {
+      // for (var day = 0; money > 0; day++) { 
         day++;
         var priceToday = getSandwichPrice();
         var numberOfSandwiches = document.getElementById("numSandwiches").value;
@@ -57,7 +58,7 @@ function resetForm() {
 //While loop example
 function countUp() {
   let i = 0;
-  while (i < 11) {
+  while (i < 10) {
     i++;
     console.log(i);
   }
