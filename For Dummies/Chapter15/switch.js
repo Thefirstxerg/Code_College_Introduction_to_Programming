@@ -1,27 +1,27 @@
 //Listing 15.1
 
-var myNumber = prompt("Enter your favorite day of the week!");
+var myNumber = prompt("Enter your favorite day of the week!").toLowerCase();
     var theResponse;
 switch (myNumber) {
-    case "Monday":
+    case "monday":
         theResponse = "Ack!";
         break;
-    case "Tuesday":
+    case "tuesday":
         theResponse = "Taco day!";
         break;
-    case "Wednesday":
+    case "wednesday":
         theResponse = "Halfway there!";
         break;
-    case "Thursday":
+    case "thursday":
         theResponse = "It's the new Friday!";
         break;
-    case "Friday":
+    case "friday":
         theResponse = "TGIF! Yeah!";
         break;
-    case "Saturday":
+    case "saturday":
         theResponse = "What a day!";
         break;
-    case "Sunday":
+    case "sunday":
         theResponse = "Sunday = Funday!";
         break;
     default:
