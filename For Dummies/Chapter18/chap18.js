@@ -54,16 +54,7 @@ function resetForm() {
   document.getElementById("receipt").innerHTML = "";
 }
 
-
-
-
-
-
-
-
-
-
-//While loop
+//While loop example
 function countUp() {
   let i = 0;
   while (i < 11) {

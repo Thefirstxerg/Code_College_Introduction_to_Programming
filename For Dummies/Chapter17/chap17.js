@@ -1,22 +1,22 @@
-//Listing 17.1
-for (var i = 10; i > 0; i--) {
-    alert(i);
-}
-alert("Blast Off!");
+// //Listing 17.1
+// for (var i = 10; i > 0; i--) {
+//     console.log(i);
+// }
+// alert("Blast Off!");
 
-//Listing 17.2
-var myFriends = ["Agatha", "Agnes", "Jermaine", "Jack"];
-for (var i = 0; i < myFriends.length; i++){
- alert(myFriends[i] + " is my friend.");
-}
+// //Listing 17.2
+// var myFriends = ["Agatha", "Agnes", "Jermaine", "Jack"];
+// for (var i = 0; i < myFriends.length; i++){
+//  alert(myFriends[i] + " is my friend.");
+// }
 
-//Listing 17.3
-alert(Math.random());
+// //Listing 17.3
+// alert(Math.random());
 
-//Listing 17.4
-var myFriends = ["Agatha", "Agnes", "Jermaine", "Jack"];
-var randomFriend = Math.floor(Math.random() * myFriends.length);
-alert(myFriends[randomFriend]);
+// //Listing 17.4
+// var myFriends = ["Agatha", "Agnes", "Jermaine", "Jack"];
+// var randomFriend = Math.floor(Math.random() * myFriends.length);
+// alert(myFriends[randomFriend]);
 
 //Listing 17.5
 var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
