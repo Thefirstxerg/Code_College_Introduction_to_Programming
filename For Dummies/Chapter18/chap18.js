@@ -56,3 +56,11 @@ function resetForm() {
     document.getElementById("receipt").innerHTML = "";
 
 }
+
+function countUp() {
+    var i = 0;
+    while (i < 10) {
+        i++;
+        console.log(i);
+    }
+}
