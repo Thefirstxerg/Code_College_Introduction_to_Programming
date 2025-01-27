@@ -5,6 +5,10 @@
 // While the guess is incorrect, test also if it is too low or too high and display the message “Incorrect, too low” or “Incorrect, too high”.
 // When you are done make the secret number random
 
+
+
+
+//Button Click Event
 document.getElementById("btnGuess").addEventListener("click", clickFunction); 
 
 function clickFunction() {
@@ -14,7 +18,8 @@ function clickFunction() {
 
     // Keep asking for guesses until the correct number is guessed
     while (guess !== secret) {
-        if (isNaN(guess)) {
+        //Validation
+        if (guess === NaN || guess === "" || guess < 1 || guess > 20 || guess === null) {
             alert("Please enter a valid number.");
         } else if (guess < secret) {
             alert("Incorrect, too low.");
