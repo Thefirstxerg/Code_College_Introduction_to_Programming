@@ -21,6 +21,7 @@ function clickFunction() {
         //Validation
         if (guess === NaN || guess === "" || guess < 1 || guess > 20 || guess === null) {
             alert("Please enter a valid number.");
+            
         } else if (guess < secret) {
             alert("Incorrect, too low.");
         } else if (guess > secret) {
